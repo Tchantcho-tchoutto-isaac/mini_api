@@ -11,7 +11,7 @@ if(!$con){
     die();
 }
 else{
-    echo"Message:connection reuissi";
+   
 }
 
 ?>
