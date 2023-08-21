@@ -13,7 +13,7 @@ if(isset($_POST['id']) && isset($_POST['description'])&& isset($_POST['nombre_et
     $nombre_etoile=$_POST['nombre_etoile'];
     $box_office=$_POST['box_office'];
 
-    $requete=$con->prepare("UPDATE films SET description='$description', nombre_etoile='$nombre_etoile'
+    $requete = $con->prepare("UPDATE films SET description='$description', nombre_etoile='$nombre_etoile',
     box_office='$box_office' WHERE id ='$id'");
 
     if($requete->execute()){
